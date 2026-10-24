@@ -5,3 +5,11 @@ alias c="g++ triangle.cpp src/glad.c -Llib -lglfw3"
 COMPILE start.cpp
 
 alias c="g++ start.cpp src/glad.c -Llib -lglfw3"
+
+COMPILE ex_two_triangles.cpp
+
+alias c="g++ ex_two_triangles.cpp src/glad.c -Llib -lglfw3"
+
+COMPILE ex_two_triangles1.cpp
+
+alias c="g++ ex_two_triangles1.cpp src/glad.c -Llib -lglfw3"
