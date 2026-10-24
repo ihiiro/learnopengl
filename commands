@@ -1,0 +1,3 @@
+COMPILE start.cpp
+
+alias c="g++ start.cpp src/glad.c -Llib -lglfw3"
