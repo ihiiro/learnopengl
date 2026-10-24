@@ -115,22 +115,21 @@ int main()
         0, 1, 3, // first triangle
         1, 2, 3 // second triangle
     };
-    // ELEMENT BUFFER OBJECT
-    unsigned int EBO;
-    glGenBuffers(1, &EBO);
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); wireframe mode
     // VERTEX ARRAY OBJECT
     unsigned int VAO;
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
-
     // VERTEX BUFFER OBJECT
     unsigned int VBO;
     glGenBuffers(1, &VBO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
+    // ELEMENT BUFFER OBJECT
+    unsigned int EBO;
+    glGenBuffers(1, &EBO);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
     
 
     // tell opengl the in-memory VBO data layout
@@ -151,7 +150,6 @@ int main()
         // rendering section
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 
