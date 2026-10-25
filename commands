@@ -33,3 +33,7 @@ alias c="g++ glsl_uniforms.cpp src/glad.c -Llib -lglfw3"
 COMPILE interpolation.cpp
 
 alias c="g++ interpolation.cpp src/glad.c -Llib -lglfw3"
+
+COMPILE shader_class.cpp
+
+alias c="g++ shader_class.cpp src/glad.c -Llib -lglfw3"
