@@ -21,3 +21,11 @@ alias c="g++ ex_two_shader_programs.cpp src/glad.c -Llib -lglfw3"
 COMPILE rectangle.cpp
 
 alias c="g++ rectangle.cpp src/glad.c -Llib -lglfw3"
+
+COME TO DIRECTORY
+
+cd Desktop/learnopengl/code/
+
+COMPILE glsl_uniforms.cpp
+
+alias c="g++ glsl_uniforms.cpp src/glad.c -Llib -lglfw3"
