@@ -17,3 +17,7 @@ alias c="g++ ex_two_triangles1.cpp src/glad.c -Llib -lglfw3"
 COMPILE ex_two_shader_programs.cpp
 
 alias c="g++ ex_two_shader_programs.cpp src/glad.c -Llib -lglfw3"
+
+COMPILE rectangle.cpp
+
+alias c="g++ rectangle.cpp src/glad.c -Llib -lglfw3"
